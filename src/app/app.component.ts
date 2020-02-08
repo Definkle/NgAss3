@@ -21,6 +21,6 @@ export class AppComponent {
   }
   getColor(data:any){
     let index = this.items.indexOf(data);
-    return index > 3 ? 'white' : '';
+    return index > 3 ? true : false;
   }
 }

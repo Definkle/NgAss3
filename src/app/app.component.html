@@ -21,8 +21,8 @@
 <ul>
   <li 
     *ngFor="let item of items"
-    [ngClass]="{'turn': items.length > 5}"
-    [ngStyle]="{'backgroundColor': getBackground(item), 'color': getColor(item)}">
+    [ngClass]="{'turn': getColor(item)}"
+    [ngStyle]="{'backgroundColor': getBackground(item)}">
     {{ item }}
   </li>
 </ul>
